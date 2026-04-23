@@ -1,4 +1,4 @@
-- name: Deploy Web Server
+y- name: Deploy Web Server
   hosts: localhost
   become: yes
 
