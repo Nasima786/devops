@@ -3,18 +3,7 @@
   become: yes
 
   tasks:
-    - name: Install nginx
-      apt:
-        name: nginx
-        state: present
-        update_cache: yes
-
-    - name: Start nginx
-      service:
-        name: nginx
-        state: started
-
-    - name: Create index file
+    - name: Replace index page
       copy:
         content: "<h1>Hello from DevOps Project 🚀</h1>"
         dest: /var/www/html/index.html
